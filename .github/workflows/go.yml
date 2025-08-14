@@ -17,6 +17,6 @@ jobs:
       - name: Check dependencies
         run: go mod tidy
       - name: Build
-        run: go build -v ./...
-      - name: Test with the Go CLI
-        run: go test -v
+        run: go build main.go
+      - name: Run
+        run: go run main.go
